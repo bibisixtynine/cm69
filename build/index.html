@@ -13,10 +13,10 @@
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-<style>
-  * {
-    user-select: auto;
-  }
+    <style>
+      * {
+        user-select: auto;
+      }
     </style>
     <script type="module" src="index.js"></script>
   </head>
@@ -24,13 +24,19 @@
   <body>
     <div id="editor"></div>
     <div>
-      <h1>
-        Codemirror6 with Safari iOS/iPadOS text selection bug :
-      </h1>
+      <h1>Codemirror6 with Safari iOS/iPadOS text selection bug :</h1>
+
+      <p>
+        1) Try to select the 12345678901 number above by double-tapping on it : the
+        selection works, but the options menu 'cut-copy-find' doesn't appear.
+      </p>
+
+      <p>
+        2) Then supress (line 1) or (line 2) or just (the last '1' digit of the
+        number), touble-tap again : this time it's OK and the options menu is
+        there.
+      </p>
       
-      Try to select the 12345678901 number above by double tapping on it : the selection works, but the options menu 'cut-copy-find' doesn't appear.
-      <br>
-      Then supress line one or two, touble-tap again : this time it's OK and the options menu is there.
     </div>
   </body>
 </html>
