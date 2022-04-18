@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>cm6</title>
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover,user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+<style>
+  * {
+    user-select: auto;
+  }
+    </style>
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="editor"></div>
+    <div>
+      <h1>
+        Codemirror6 with Safari iOS/iPadOS text selection bug :
+      </h1>
+      
+      Try to select the 12345678901 number above by double tapping on it : the selection works, but the options menu 'cut-copy-find' doesn't appear.
+      <br>
+      Then supress line one or two, touble-tap again : this time it's OK and the options menu is there.
+    </div>
+  </body>
+</html>
