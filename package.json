@@ -4,9 +4,9 @@
     "build": "esbuild src/index.js --bundle --minify --outdir=build --define:process.env.NODE_ENV=\\\"production\\\""
   },
   "dependencies": {
-    "@codemirror/basic-setup": "^0.19.1",
-    "@codemirror/view": "^0.19.36",
-    "@codemirror/lang-javascript": "^0.19.3",
+    "@codemirror/basic-setup": "^0.19.3",
+    "@codemirror/view": "^0.19.48",
+    "@codemirror/lang-javascript": "^0.19.7",
     "@codemirror/matchbrackets": "^0.19.4",
     "@codemirror/highlight": "^0.19.8",
     "@codemirror/theme-one-dark": "^0.19.1"
